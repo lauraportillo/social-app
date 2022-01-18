@@ -1,8 +1,8 @@
-# Practicing Custom Hooks!
+# FriendChic app!
 
 Work in progress ⛏
 
-Practicing Custom Hooks with **React.JS**
+**React.JS**
 
 ### 🚀🚀🚀🚀🚀
 
