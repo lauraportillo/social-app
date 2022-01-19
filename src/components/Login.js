@@ -10,14 +10,14 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const handleSubmit = (ev) => {
-    ev.preventDEfault();
+    ev.preventDefault();
   };
 
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <input placehonder="username" value={username} />
-        <input placehonder="password" value={password} />
+        <input placehonder="username" onChange={(ev) => setUsername(ev.target.value)} value={username} />
+        <input placehonder="password" onChange={(ev) => setPassword(ev.target.value)} value={password} />
         <button>Login</button>
       </form>
     </>
