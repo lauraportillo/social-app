@@ -8,9 +8,18 @@ const Login = () => {
   //state
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
+  const handleSubmit = (ev) => {
+    ev.preventDEfault();
+  };
+
   return (
     <>
-      <div>LOGIN</div>
+      <form onSubmit={handleSubmit}>
+        <input placehonder="username" value={username} />
+        <input placehonder="password" value={password} />
+        <button>Login</button>
+      </form>
     </>
   );
 };
