@@ -1,4 +1,6 @@
-import React from 'react';
+// React
+import { Link } from 'react-router-dom';
+// Styles
 import '../stylesheets/Header.scss';
 
 const Header = (props) => {

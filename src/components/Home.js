@@ -10,7 +10,7 @@ const Home = (props) => {
       <Header />
 
       <main className="home">
-        <h1>FriendChic App</h1>
+        <h1>FriendChic</h1>
       </main>
 
       <Footer />
