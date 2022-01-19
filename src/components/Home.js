@@ -1,15 +1,16 @@
 // Components
 import Footer from './Footer';
+import Header from './Header';
 // Styles
 import '../stylesheets/Home.scss';
 
 const Home = (props) => {
   return (
     <div className="containerHome">
-      <header className="nav">login</header>
+      <Header />
 
       <main className="home">
-        <h1>home</h1>
+        <h1>FriendChic</h1>
       </main>
 
       <Footer />
