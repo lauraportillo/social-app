@@ -44,9 +44,7 @@ const Login = () => {
           />
         </div>
 
-        <button className="containerForm__item--btn">
-          <Link to="/instructionsEn">Login</Link>
-        </button>
+        <button className="containerForm__item--btn">Login</button>
       </form>
       <Footer />
     </div>
