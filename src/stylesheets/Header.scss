@@ -3,4 +3,9 @@
 
 .nav {
   @include flexColumnEnd();
+  padding: 10px;
+  font-size: 16px;
+}
+.nav:hover {
+  font-weight: 600;
 }
