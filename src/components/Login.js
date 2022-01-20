@@ -17,7 +17,7 @@ const Login = () => {
   };
 
   return (
-    <div className="containerHome">
+    <div className="containerLogin">
       <Header />
       <form className="containerForm" onSubmit={handleSubmit}>
         <div className="containerForm__item">
@@ -44,7 +44,9 @@ const Login = () => {
           />
         </div>
 
-        <button className="containerForm__item--btn">Login</button>
+        <button className="containerForm__item--btn">
+          <Link to="/instructionsEn">Login</Link>
+        </button>
       </form>
       <Footer />
     </div>

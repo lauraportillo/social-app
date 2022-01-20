@@ -1,6 +1,13 @@
 @import 'Variables';
 @import 'Mixins';
 
+.containerLogin {
+  background-color: $color2;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 .containerForm {
   @include flexColumn();
 }
@@ -19,12 +26,12 @@
   border-radius: 5px;
   border: solid grey 1px;
   text-align: start;
+  padding-left: 10px;
 }
 
 .containerForm__item--input::placeholder {
   color: grey;
   font-style: italic;
-  padding-left: 5px;
 }
 .containerForm__item--btn {
   width: 220px;
@@ -33,3 +40,18 @@
   border: solid rgb(197, 189, 189) 1px;
   text-align: center;
 }
+
+// .containerHome {
+//   background-color: $color2;
+//   min-height: 100vh;
+//   display: grid;
+//   grid-template-rows: auto 1fr auto;
+// }
+
+// .home {
+//   @include flexColumn();
+// }
+// .home__title {
+//   font-size: 30px;
+//   font-weight: 600;
+// }

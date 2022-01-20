@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 // Components
-import Home from './Home';
 import Login from './Login';
 import Logout from './Logout';
 // Styles
@@ -13,10 +12,6 @@ function App() {
   return (
     <>
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-
         <Route exact path="/login">
           <Login />
         </Route>
