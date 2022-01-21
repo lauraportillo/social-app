@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "name": "cloe",
+      "description": "lorem",
+      "image":"./images/users/cloe.jpg",
+      "post":{
+        "mobile":"./images/posts/churchstreet-320.jpg",
+        "tablet": "./images/posts/churchstreet-768.jpg",
+        "description": "lorem"
+        }
+    },
+    {
+        "id": 2,
+        "name": "rajesh",
+        "description": "lorem",
+        "image":"./images/users/rajesh.jpg",
+        "post":{
+          "mobile":"./images/posts/clissold-320.jpg",
+          "tablet": "./images/posts/clissold-768.jpg",
+          "description": "lorem"
+          }
+      },
+      {
+        "id": 1,
+        "name": "julia",
+        "description": "lorem",
+        "image":"./images/users/julia.jpg",
+        "post":{
+          "mobile":"./images/posts/river-320.jpg",
+          "tablet": "./images/posts/river-768.jpg",
+          "description": "lorem"
+          }
+      }
+]  
