@@ -2,15 +2,8 @@
 @import 'Mixins';
 
 .containerHeader {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #efefef;
-  height: 60px;
-}
-
-.containerHeader__title {
-  font-size: 20px;
-  font-weight: 600;
+  padding: 15px;
+  @include flexColumnEnd();
+  // background-color: #efefef;
+  // height: 60px;
 }

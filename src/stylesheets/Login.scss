@@ -8,35 +8,41 @@
   grid-template-rows: auto 1fr auto;
 }
 
-.containerForm {
+.containerMain {
   @include flexColumn();
 }
-.containerForm__item {
-  @include flexColumnStart();
-  margin-bottom: 15px;
-}
-.containerForm__item--label {
-  margin-bottom: 5px;
+.containerMain__title {
+  font-size: 20px;
   font-weight: 600;
+  color: #ff0080;
+}
+.containerForm {
+  margin-top: 15px;
 }
 
-.containerForm__item--input {
+.containerForm__item {
+  @include flexColumn();
   width: 220px;
   height: 30px;
   border-radius: 5px;
   border: solid grey 1px;
   text-align: start;
   padding-left: 10px;
+  margin-bottom: 5px;
 }
 
-.containerForm__item--input::placeholder {
+.containerForm__item::placeholder {
   color: grey;
   font-style: italic;
 }
-.containerForm__item--btn {
+.containerForm__btn {
   width: 220px;
   height: 30px;
   border-radius: 5px;
-  border: solid rgb(197, 189, 189) 1px;
+  border: solid #ff0080 1px;
+  background-color: #ff0080;
+  color: white;
+  font-weight: 600;
   text-align: center;
+  margin-top: 5px;
 }
