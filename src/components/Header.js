@@ -7,9 +7,16 @@ const Header = () => {
   const isLogged = false;
   return (
     <header className="containerHeader">
-      {/* <h1 className="containerHeader__title">FriendChic</h1> */}
       <nav className="containerHeader__nav">
-        {isLogged ? <Link to="/logout">Logout</Link> : <Link to="/">Login</Link>}
+        {isLogged ? (
+          <Link className="containerHeader__nav--item" to="/logout">
+            Logout
+          </Link>
+        ) : (
+          <Link className="containerHeader__nav--item" to="/">
+            Login
+          </Link>
+        )}
       </nav>
     </header>
   );

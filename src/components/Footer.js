@@ -13,7 +13,7 @@ const Footer = (props) => {
             rel="noopener noreferrer"
             title="linkedin"
           >
-            <i className="fa fa-linkedin" alt="linkedin icon"></i>
+            <i className="fa fa-linkedin icon" alt="linkedin icon"></i>
           </a>
         </li>
         <li className="footer__item">
@@ -24,7 +24,7 @@ const Footer = (props) => {
             rel="noopener noreferrer"
             title="github"
           >
-            <i className="fa fa-github-alt" alt="github icon"></i>
+            <i className="fa fa-github-alt icon" alt="github icon"></i>
           </a>
         </li>
         <li className="footer__item">
@@ -35,18 +35,18 @@ const Footer = (props) => {
             rel="noopener noreferrer"
             title="twitter"
           >
-            <i className="fa fa-twitter" alt="twitter icon"></i>
+            <i className="fa fa-twitter icon" alt="twitter icon"></i>
           </a>
         </li>
         <li className="footer__item">
           <a
-            className="footer__item--icon"
+            className="footer__item--icon icon"
             href="mailto:lauraportillo.ark@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             title="email"
           >
-            <i className="fa fa-envelope" alt="envelope icon"></i>
+            <i className="fa fa-envelope icon" alt="envelope icon"></i>
           </a>
         </li>
       </ul>

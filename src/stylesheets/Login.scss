@@ -14,7 +14,7 @@
 .containerMain__title {
   font-size: 20px;
   font-weight: 600;
-  color: #ff0080;
+  color: $color3;
 }
 .containerForm {
   margin-top: 15px;
@@ -22,27 +22,39 @@
 
 .containerForm__item {
   @include flexColumn();
-  width: 220px;
+  width: 250px;
   height: 30px;
   border-radius: 5px;
-  border: solid grey 1px;
+  border: solid $color4 1px;
   text-align: start;
   padding-left: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  background-color: $color4;
+  box-shadow: 1px 1px 2px 1px $color5;
 }
 
 .containerForm__item::placeholder {
-  color: grey;
+  color: $color5;
   font-style: italic;
 }
 .containerForm__btn {
-  width: 220px;
+  width: 250px;
   height: 30px;
   border-radius: 5px;
-  border: solid #ff0080 1px;
-  background-color: #ff0080;
-  color: white;
+  border: solid $color3 1px;
+  background-color: $color3;
+  color: $color2;
   font-weight: 600;
   text-align: center;
   margin-top: 5px;
+  cursor: pointer;
+}
+.containerForm__btn:hover {
+  transform: translateY(3px);
+  transition: all 0.1s ease-in-out;
+}
+
+.containerForm__btn:active {
+  background-color: $color5;
+  border: solid $color5 1px;
 }

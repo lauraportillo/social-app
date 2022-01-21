@@ -21,7 +21,7 @@ const Login = () => {
       <Header />
 
       <main className="containerMain">
-        <h1 className="containerMain__title">friendChic</h1>
+        <h1 className="containerMain__title">FriendChic</h1>
 
         <form className="containerForm" onSubmit={handleSubmit}>
           <input

@@ -4,6 +4,9 @@
 .containerHeader {
   padding: 15px;
   @include flexColumnEnd();
-  // background-color: #efefef;
-  // height: 60px;
+}
+
+.containerHeader__nav--item {
+  color: $color5;
+  opacity: 0.5;
 }

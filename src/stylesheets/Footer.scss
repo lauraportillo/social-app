@@ -13,17 +13,15 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-.footer__item:hover,
-.game__lang--en:hover,
-.game__lang--es:hover {
-  color: #fff;
-  @include redNeon();
-  transform: scale(1.1);
-  transition: all 0.1s ease-in-out;
+
+.icon {
+  color: $color5;
 }
 
-.black {
-  color: $color1;
+.icon:hover {
+  color: $color3;
+  transform: scale(1.2);
+  transition: all 0.1s ease-in-out;
 }
 
 @media all and (min-width: 768px) {
