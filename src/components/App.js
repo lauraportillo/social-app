@@ -7,8 +7,12 @@ import Logout from './Logout';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
+// Services
+import data from '../data/data.json';
 
 function App() {
+  // State
+  const [posts] = useState(data);
   return (
     <>
       <Switch>
