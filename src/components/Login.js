@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // Components
-import Footer from './Footer';
 import Header from './Header';
+import Footer from './Footer';
 // Styles
 import '../stylesheets/Login.scss';
 

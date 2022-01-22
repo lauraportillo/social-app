@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 // Components
 import Login from './Login';
 import Logout from './Logout';
+import PostList from './PostList';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
@@ -22,6 +23,10 @@ function App() {
 
         <Route exact path="/logout">
           <Logout />
+        </Route>
+
+        <Route exact path="/postlist">
+          <PostList posts={posts} />
         </Route>
       </Switch>
     </>
