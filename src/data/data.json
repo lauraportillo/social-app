@@ -5,8 +5,7 @@
       "description": "lorem",
       "image":"./images/users/cloe.jpg",
       "post":{
-        "mobile":"./images/posts/churchstreet-320.jpg",
-        "tablet": "./images/posts/churchstreet-768.jpg",
+        "photo": "./images/posts/churchstreet.jpg",
         "description": "lorem"
         }
     },
@@ -16,8 +15,7 @@
         "description": "lorem",
         "image":"./images/users/rajesh.jpg",
         "post":{
-          "mobile":"./images/posts/clissold-320.jpg",
-          "tablet": "./images/posts/clissold-768.jpg",
+          "photo": "./images/posts/clissold.jpg",
           "description": "lorem"
           }
       },
@@ -27,8 +25,7 @@
         "description": "lorem",
         "image":"./images/users/julia.jpg",
         "post":{
-          "mobile":"./images/posts/river-320.jpg",
-          "tablet": "./images/posts/river-768.jpg",
+          "photo": "./images/posts/river.jpg",
           "description": "lorem"
           }
       }
