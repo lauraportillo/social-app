@@ -6,7 +6,7 @@ import '../stylesheets/Post.scss';
 const Post = (props) => {
   return (
     <>
-      <div></div>
+      <div>hola</div>
     </>
   );
 };

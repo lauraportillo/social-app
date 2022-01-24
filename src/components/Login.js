@@ -38,7 +38,11 @@ const Login = () => {
             value={password}
           />
 
-          <button className="containerForm__btn">Login</button>
+          <button className="containerForm__btn">
+            <Link className="containerForm__btn" to="/postlist">
+              Login
+            </Link>
+          </button>
         </form>
       </main>
       <Footer />
