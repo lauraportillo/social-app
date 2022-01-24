@@ -2,31 +2,31 @@
     {
       "id": 1,
       "name": "cloe",
-      "description": "lorem",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt reiciendis numquam velit blanditiis id itaque aspernatur quos molestias cupiditate. Nisi a possimus dignissimos delectus, assumenda placeat officia sint et!",
       "image":"./images/users/cloe.jpg",
       "post":{
         "photo": "./images/posts/churchstreet.jpg",
-        "description": "lorem"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt reiciendis numquam velit blanditiis id itaque aspernatur quos molestias cupiditate. Nisi a possimus dignissimos delectus, assumenda placeat officia sint et!"
         }
     },
     {
         "id": 2,
         "name": "rajesh",
-        "description": "lorem",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt reiciendis numquam velit blanditiis id itaque aspernatur quos molestias cupiditate. Nisi a possimus dignissimos delectus, assumenda placeat officia sint et!",
         "image":"./images/users/rajesh.jpg",
         "post":{
           "photo": "./images/posts/clissold.jpg",
-          "description": "lorem"
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt reiciendis numquam velit blanditiis id itaque aspernatur quos molestias cupiditate. Nisi a possimus dignissimos delectus, assumenda placeat officia sint et!"
           }
       },
       {
         "id": 1,
         "name": "julia",
-        "description": "lorem",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt reiciendis numquam velit blanditiis id itaque aspernatur quos molestias cupiditate. Nisi a possimus dignissimos delectus, assumenda placeat officia sint et!",
         "image":"./images/users/julia.jpg",
         "post":{
           "photo": "./images/posts/river.jpg",
-          "description": "lorem"
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt reiciendis numquam velit blanditiis id itaque aspernatur quos molestias cupiditate. Nisi a possimus dignissimos delectus, assumenda placeat officia sint et!"
           }
       }
 ]  

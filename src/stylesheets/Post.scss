@@ -1,0 +1,7 @@
+@import 'Variables';
+@import 'Mixins';
+
+.containerPost {
+  @include flexColumn();
+  width: 300px;
+}

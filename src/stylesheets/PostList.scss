@@ -1,0 +1,6 @@
+@import 'Variables';
+@import 'Mixins';
+
+.containerPostList {
+  @include flexColumn();
+}

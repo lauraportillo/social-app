@@ -14,11 +14,7 @@ const PostList = (props) => {
     );
   });
 
-  return (
-    <div className="PostList">
-      <ul className="PostList__list">{renderPost}</ul>
-    </div>
-  );
+  return <ul className="containerPostList">{renderPost}</ul>;
 };
 
 export default PostList;
