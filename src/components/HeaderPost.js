@@ -1,19 +1,20 @@
 // React
 import { Link } from 'react-router-dom';
 // Styles
-import '../stylesheets/Header.scss';
+import '../stylesheets/HeaderPost.scss';
 
-const Header = () => {
+const HeaderPost = () => {
   const isLogged = false;
   return (
-    <header className="containerHeader">
-      <nav className="containerHeader__nav">
+    <header className="containerHeaderPost">
+      <h1 className="containerHeaderPost__title">FriendChic</h1>
+      <nav className="containerHeaderPost__nav">
         {isLogged ? (
-          <Link className="containerHeader__nav--item" to="/logout">
+          <Link className="containerHeaderPost__nav--item" to="/logout">
             Logout
           </Link>
         ) : (
-          <Link className="containerHeader__nav--item" to="/">
+          <Link className="containerHeaderPost__nav--item" to="/">
             Login
           </Link>
         )}
@@ -22,4 +23,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderPost;

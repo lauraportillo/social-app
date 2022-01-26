@@ -1,0 +1,13 @@
+@import 'Variables';
+@import 'Mixins';
+
+.containerHeaderPost {
+  @include flexBetween();
+  padding: 15px;
+}
+
+.containerHeaderPost__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: $color3;
+}
