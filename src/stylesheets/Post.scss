@@ -2,6 +2,24 @@
 @import 'Mixins';
 
 .containerPost {
-  @include flexColumn();
-  width: 300px;
+  @include flexColumnStart();
+  width: 280px;
+  margin-top: 10px;
+}
+
+.containerPost__img {
+  width: 280px;
+}
+
+.containerPost__title {
+  font-size: 14px;
+  color: $color3;
+  margin-top: 10px;
+}
+
+.containerPost__text {
+  font-size: 14px;
+  color: $color5;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }

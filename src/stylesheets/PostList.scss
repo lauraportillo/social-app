@@ -4,3 +4,8 @@
 .containerPostList {
   @include flexColumn();
 }
+
+.containerPostList__form--item {
+  width: 280px;
+  height: 30px;
+}

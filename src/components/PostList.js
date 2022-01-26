@@ -18,7 +18,13 @@ const PostList = (props) => {
   return (
     <>
       <HeaderPost />
-      <ul className="containerPostList">{renderPost}</ul>
+      <main className="containerPostList">
+        <form className="containerPostList__form">
+          <input className="containerPostList__form--item" placeholder="search" />
+        </form>
+
+        <ul className="containerPostList__list">{renderPost}</ul>
+      </main>
     </>
   );
 };
