@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Login from './Login';
 import Logout from './Logout';
 import PostList from './PostList';
-import UserProfile from './UserProfile';
+import UserDetail from './UserDetail';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
@@ -15,6 +15,19 @@ import data from '../data/data.json';
 function App() {
   // State
   const [posts] = useState(data);
+
+  //  // Each user has their link
+  //  const renderCharacterDetail = (props) => {
+  //   const id = parseInt(props.match.params.id);
+  //   const characterFound = characters.find((character) => character.id === id);
+
+  //   if (characterFound) {
+  //     return <CharacterDetail character={characterFound} />;
+  //   } else {
+  //     return <CharacterNotFound />;
+  //   }
+  // };
+
   return (
     <>
       <Switch>
@@ -32,7 +45,7 @@ function App() {
       </Switch>
 
       <Route exact path="/post/:id">
-        <UserProfile />
+        <UserDetail posts={posts} />
       </Route>
     </>
   );
