@@ -1,10 +1,10 @@
-import React from 'react';
+// Styles
 import '../stylesheets/UserProfile.scss';
 
 const UserProfile = (props) => {
   return (
     <>
-      <div></div>
+      <div>holaaaaaaaa</div>
     </>
   );
 };

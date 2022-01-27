@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Login from './Login';
 import Logout from './Logout';
 import PostList from './PostList';
+import UserProfile from './UserProfile';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
@@ -29,6 +30,10 @@ function App() {
           <PostList posts={posts} />
         </Route>
       </Switch>
+
+      <Route exact path="/post/:id">
+        <UserProfile />
+      </Route>
     </>
   );
 }
