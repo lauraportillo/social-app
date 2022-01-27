@@ -6,6 +6,7 @@ import Login from './Login';
 import Logout from './Logout';
 import PostList from './PostList';
 import UserDetail from './UserDetail';
+import UserNotFound from './UserNotFound';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
@@ -16,17 +17,17 @@ function App() {
   // State
   const [posts] = useState(data);
 
-  //  // Each user has their link
-  //  const renderCharacterDetail = (props) => {
-  //   const id = parseInt(props.match.params.id);
-  //   const characterFound = characters.find((character) => character.id === id);
+  // Each user has their link
+  const renderUserDetail = (props) => {
+    const id = parseInt(props.match.params.id);
+    const characterFound = posts.find((post) => post.id === id);
 
-  //   if (characterFound) {
-  //     return <CharacterDetail character={characterFound} />;
-  //   } else {
-  //     return <CharacterNotFound />;
-  //   }
-  // };
+    if (characterFound) {
+      return <UserDetail post={characterFound} />;
+    } else {
+      return <UserNotFound />;
+    }
+  };
 
   return (
     <>
@@ -35,18 +36,16 @@ function App() {
           <Login />
         </Route>
 
-        <Route exact path="/logout">
+        <Route path="/logout">
           <Logout />
         </Route>
 
-        <Route exact path="/postlist">
+        <Route path="/postlist">
           <PostList posts={posts} />
         </Route>
-      </Switch>
 
-      <Route exact path="/post/:id">
-        <UserDetail posts={posts} />
-      </Route>
+        <Route path="/post/:id" render={renderUserDetail} />
+      </Switch>
     </>
   );
 }

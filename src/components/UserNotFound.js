@@ -1,4 +1,4 @@
-import React from 'react';
+// Styles
 import '../stylesheets/UserNotFound.scss';
 
 const UserNotFound = (props) => {

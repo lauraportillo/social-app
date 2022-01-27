@@ -1,0 +1,25 @@
+@import 'Variables';
+@import 'Mixins';
+
+.containerUser {
+  @include flexColumnStart();
+  width: 280px;
+  margin-top: 10px;
+}
+
+.containerUser__img {
+  width: 280px;
+}
+
+.containerUser__title {
+  font-size: 14px;
+  color: $color3;
+  margin-top: 10px;
+}
+
+.containerUser__text {
+  font-size: 14px;
+  color: $color5;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
