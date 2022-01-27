@@ -2,9 +2,9 @@
 @import 'Mixins';
 
 .containerUser {
-  @include flexColumnStart();
-  width: 280px;
-  margin-top: 10px;
+  @include flexColumn();
+  //   width: 280px;
+  margin-top: 15px;
 }
 
 .containerUser__img {
