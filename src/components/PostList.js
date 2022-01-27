@@ -1,5 +1,3 @@
-// React
-import React from 'react';
 // Components
 import HeaderPost from './HeaderPost';
 import Post from './Post';
