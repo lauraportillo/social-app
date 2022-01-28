@@ -16,6 +16,10 @@
   color: $color3;
   margin-top: 10px;
 }
+.containerPost__title:hover {
+  color: $color5;
+  transition: all 0.1s ease-in-out;
+}
 
 .containerPost__text {
   font-size: 14px;

@@ -2,22 +2,29 @@
 @import 'Mixins';
 
 .containerUser {
+  background-color: $color2;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.containerUserArt {
   @include flexColumn();
   //   width: 280px;
   margin-top: 15px;
 }
 
-.containerUser__img {
+.containerUserArt__img {
   width: 280px;
 }
 
-.containerUser__title {
+.containerUserArt__title {
   font-size: 14px;
   color: $color3;
   margin-top: 10px;
 }
 
-.containerUser__text {
+.containerUserArt__text {
   font-size: 14px;
   color: $color5;
   margin-top: 10px;
