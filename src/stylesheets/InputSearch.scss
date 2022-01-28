@@ -1,0 +1,20 @@
+@import 'Variables';
+@import 'Mixins';
+
+.inputSearch {
+  width: 280px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: solid $color4 1px;
+  text-align: start;
+  padding-left: 10px;
+  background-color: $color2;
+  box-shadow: 1px 1px 2px 1px $color5;
+}
+
+.inputSearch::placeholder {
+  color: $color5;
+  font-style: italic;
+}

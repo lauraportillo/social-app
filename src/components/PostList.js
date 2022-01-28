@@ -1,6 +1,7 @@
 // Components
 import HeaderPost from './HeaderPost';
 import Post from './Post';
+import InputSearch from './InputSearch';
 import Footer from './Footer';
 // Styles
 import '../stylesheets/PostList.scss';
@@ -19,7 +20,7 @@ const PostList = (props) => {
       <HeaderPost />
       <main className="containerPostListMain">
         <form className="containerPostListMain__form">
-          <input className="containerPostListMain__form--item" placeholder="search" />
+          <InputSearch />
         </form>
 
         <ul className="containerPostListMain__list">{renderPost}</ul>
