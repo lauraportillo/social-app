@@ -18,6 +18,11 @@ const UserDetail = (props) => {
           <h2 className="containerUserArt__title">@{props.post.name}</h2>
           <p className="containerUserArt__text">{props.post.description}</p>
         </article>
+        <button className="containerUserMain__btn">
+          <Link className="containerUserMain__btn" to="/postlist">
+            {'<<<'}
+          </Link>
+        </button>
       </main>
       <Footer />
     </div>
