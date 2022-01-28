@@ -10,7 +10,7 @@ const UserDetail = (props) => {
   return (
     <div className="containerUser">
       <HeaderPost />
-      <main>
+      <main className="containerUserMain">
         <article className="containerUserArt">
           <div className="containerUserArt__circular">
             <img className="containerUserArt__circular--img" src={props.post.image} alt="user-pic" />

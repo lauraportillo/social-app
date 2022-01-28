@@ -8,9 +8,12 @@
   grid-template-rows: auto 1fr auto;
 }
 
+.containerUserMain {
+  @include flexColumn();
+}
+
 .containerUserArt {
   @include flexColumn();
-  margin-top: 15px;
 }
 
 .containerUserArt__circular {
@@ -34,8 +37,10 @@
 }
 
 .containerUserArt__text {
+  width: 280px;
   font-size: 14px;
   color: $color5;
   margin-top: 10px;
   margin-bottom: 30px;
+  text-align: center;
 }
