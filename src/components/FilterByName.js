@@ -1,7 +1,7 @@
 // Styles
-import '../stylesheets/InputSearch.scss';
+import '../stylesheets/FilterByName.scss';
 
-const InputSearch = (props) => {
+const FilterByName = (props) => {
   const handleChange = (ev) => {
     props.handleFilter({
       key: 'name',
@@ -23,4 +23,4 @@ const InputSearch = (props) => {
     </>
   );
 };
-export default InputSearch;
+export default FilterByName;

@@ -16,6 +16,19 @@ import data from '../data/data.json';
 function App() {
   // State
   const [posts] = useState(data);
+  const [name, setName] = useState('');
+
+  // definición de la función que maneja los cambios en el input
+  const handleFilter = (inputChange) => {
+    if (inputChange.key === 'name') {
+      setName(inputChange.value);
+    }
+  };
+
+  //filtrar
+  const filterPosts = posts.filter((post) => {
+    return post.name.toLowerCase().includes(name.toLowerCase());
+  });
 
   // Each user has their link
   const renderUserDetail = (props) => {
@@ -41,7 +54,7 @@ function App() {
         </Route>
 
         <Route path="/postlist">
-          <PostList posts={posts} />
+          <PostList handleFilter={handleFilter} name={name} posts={filterPosts} />
         </Route>
 
         <Route path="/post/:id" render={renderUserDetail} />
