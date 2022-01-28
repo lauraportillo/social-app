@@ -1,3 +1,8 @@
+// React
+import { Link } from 'react-router-dom';
+// Components
+import HeaderPost from './HeaderPost';
+import Footer from './Footer';
 // Styles
 import '../stylesheets/UserDetail.scss';
 

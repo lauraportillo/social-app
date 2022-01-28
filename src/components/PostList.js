@@ -1,6 +1,7 @@
 // Components
 import HeaderPost from './HeaderPost';
 import Post from './Post';
+import Footer from './Footer';
 // Styles
 import '../stylesheets/PostList.scss';
 
@@ -23,6 +24,7 @@ const PostList = (props) => {
 
         <ul className="containerPostList__list">{renderPost}</ul>
       </main>
+      <Footer />
     </>
   );
 };
