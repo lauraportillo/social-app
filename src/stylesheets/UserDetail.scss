@@ -10,12 +10,21 @@
 
 .containerUserArt {
   @include flexColumn();
-  //   width: 280px;
   margin-top: 15px;
 }
 
-.containerUserArt__img {
-  width: 280px;
+.containerUserArt__circular {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.containerUserArt__circular--img {
+  width: 200px;
+  height: auto;
 }
 
 .containerUserArt__title {

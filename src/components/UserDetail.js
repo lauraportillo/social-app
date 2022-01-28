@@ -12,7 +12,9 @@ const UserDetail = (props) => {
       <HeaderPost />
       <main>
         <article className="containerUserArt">
-          <img className="containerUserArt__img" src={props.post.image} alt="user-pic" />
+          <div className="containerUserArt__circular">
+            <img className="containerUserArt__circular--img" src={props.post.image} alt="user-pic" />
+          </div>
           <h2 className="containerUserArt__title">@{props.post.name}</h2>
           <p className="containerUserArt__text">{props.post.description}</p>
         </article>
