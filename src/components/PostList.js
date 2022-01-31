@@ -1,6 +1,7 @@
 // Components
 import Header from './Header';
 import Post from './Post';
+import UserNotFound from './UserNotFound';
 import FilterByName from './FilterByName';
 import Footer from './Footer';
 // Styles
@@ -17,6 +18,10 @@ const PostList = (props) => {
       </li>
     );
   });
+
+  if (renderPost.length === 0) {
+    return <UserNotFound />;
+  }
 
   return (
     <div className="containerPostList">

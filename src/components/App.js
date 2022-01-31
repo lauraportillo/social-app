@@ -6,7 +6,6 @@ import Login from './Login';
 import Logout from './Logout';
 import PostList from './PostList';
 import UserDetail from './UserDetail';
-import UserNotFound from './UserNotFound';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
@@ -35,11 +34,7 @@ function App() {
     const id = parseInt(props.match.params.id);
     const characterFound = posts.find((post) => post.id === id);
 
-    if (characterFound) {
-      return <UserDetail post={characterFound} />;
-    } else {
-      return <UserNotFound />;
-    }
+    return <UserDetail post={characterFound} />;
   };
 
   return (

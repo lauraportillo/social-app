@@ -4,7 +4,7 @@ import '../stylesheets/UserNotFound.scss';
 const UserNotFound = (props) => {
   return (
     <>
-      <div>NOT FOUND</div>
+      <h2 className="containerUser__title">Sorry, friend not found</h2>
     </>
   );
 };
