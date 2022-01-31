@@ -20,12 +20,13 @@ const PostList = (props) => {
 
   return (
     <div className="containerPostList">
-      <HeaderPost />
-      <main className="containerPostListMain">
+      <header>
+        <HeaderPost />
         <form onSubmit={handleForm} className="containerPostListMain__form">
           <FilterByName handleFilter={props.handleFilter} name={props.name} />
         </form>
-
+      </header>
+      <main className="containerPostListMain">
         <ul className="containerPostListMain__list">{renderPost}</ul>
       </main>
       <Footer />
