@@ -2,16 +2,12 @@
 import Header from './Header';
 import UserNotFound from './UserNotFound';
 import Post from './Post';
-import FilterByName from './FilterByName';
+import Filters from './Filters';
 import Footer from './Footer';
 // Styles
 import '../stylesheets/PostList.scss';
 
 const PostList = (props) => {
-  const handleForm = (ev) => {
-    ev.preventDefault();
-  };
-
   const renderPost = () => {
     if (props.characters.length === 0) {
       return <UserNotFound />;
@@ -30,9 +26,7 @@ const PostList = (props) => {
     <div className="containerPostList">
       <header>
         <Header />
-        <form onSubmit={handleForm} className="containerPostListHeader__form">
-          <FilterByName handleFilter={props.handleFilter} name={props.name} />
-        </form>
+        <Filters />
       </header>
       <main className="containerPostListMain">
         <ul className="containerPostListMain__list">{renderPost}</ul>
