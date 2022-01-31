@@ -1,7 +1,7 @@
 // React
 import { Link } from 'react-router-dom';
 // Components
-import HeaderPost from './HeaderPost';
+import Header from './Header';
 import Footer from './Footer';
 // Styles
 import '../stylesheets/UserDetail.scss';
@@ -9,7 +9,7 @@ import '../stylesheets/UserDetail.scss';
 const UserDetail = (props) => {
   return (
     <div className="containerUser">
-      <HeaderPost />
+      <Header />
       <main className="containerUserMain">
         <article className="containerUserArt">
           <div className="containerUserArt__circular">
