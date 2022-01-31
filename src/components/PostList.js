@@ -19,9 +19,9 @@ const PostList = (props) => {
     );
   });
 
-  if (renderPost.length === 0) {
-    return <UserNotFound />;
-  }
+  // if (renderPost.length === 0) {
+  //   return <UserNotFound />;
+  // }
 
   return (
     <div className="containerPostList">
