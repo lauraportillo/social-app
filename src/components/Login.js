@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // Components
-import Header from './Header';
 import Footer from './Footer';
 // Styles
 import '../stylesheets/Login.scss';
@@ -18,7 +17,7 @@ const Login = () => {
 
   return (
     <div className="containerLogin">
-      <Header />
+      <header></header>
 
       <main className="containerMain">
         <h1 className="containerMain__title">FriendChic</h1>

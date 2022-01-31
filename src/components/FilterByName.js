@@ -16,7 +16,7 @@ const FilterByName = (props) => {
         name="name"
         id="name"
         placeholder="search"
-        //estado sincronizado con el input
+        // synchronized state with input
         value={props.name}
         onChange={handleChange}
       />

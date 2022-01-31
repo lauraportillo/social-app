@@ -18,14 +18,14 @@ function App() {
   const [posts] = useState(data);
   const [name, setName] = useState('');
 
-  // definición de la función que maneja los cambios en el input
+  // Function that handles changes to the input
   const handleFilter = (inputChange) => {
     if (inputChange.key === 'name') {
       setName(inputChange.value);
     }
   };
 
-  //filtrar
+  // Filter
   const filterPosts = posts.filter((post) => {
     return post.name.toLowerCase().includes(name.toLowerCase());
   });
