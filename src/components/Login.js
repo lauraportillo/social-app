@@ -38,7 +38,7 @@ const Login = () => {
           />
 
           <button className="containerForm__btn">
-            <Link className="containerForm__btn" to="/postlist">
+            <Link className="containerForm__btn" to="/home">
               Login
             </Link>
           </button>

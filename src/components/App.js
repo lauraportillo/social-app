@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 // Components
 import Login from './Login';
 import Logout from './Logout';
-import PostList from './PostList';
+import Home from './Home';
 import UserDetail from './UserDetail';
 import UserNotFound from './UserNotFound';
 // Styles
@@ -16,19 +16,6 @@ import data from '../data/data.json';
 function App() {
   // State
   const [posts] = useState(data);
-  const [name, setName] = useState('');
-
-  // Function that handles changes to the input
-  const handleFilter = (inputChange) => {
-    if (inputChange.key === 'name') {
-      setName(inputChange.value);
-    }
-  };
-
-  // Filter
-  const filterPosts = posts.filter((post) => {
-    return post.name.toLowerCase().includes(name.toLowerCase());
-  });
 
   // Each user has their link
   const renderUserDetail = (props) => {
@@ -53,8 +40,8 @@ function App() {
           <Logout />
         </Route>
 
-        <Route path="/postlist">
-          <PostList handleFilter={handleFilter} name={name} posts={filterPosts} />
+        <Route path="/home">
+          <Home posts={posts} />
         </Route>
 
         <Route path="/post/:id" render={renderUserDetail} />
