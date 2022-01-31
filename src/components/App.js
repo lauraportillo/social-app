@@ -4,8 +4,10 @@ import { Route, Switch } from 'react-router-dom';
 // Components
 import Login from './Login';
 import Logout from './Logout';
+import Home from './Home';
 import PostList from './PostList';
 import UserDetail from './UserDetail';
+import UserNotFound from './UserNotFound';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
@@ -34,7 +36,11 @@ function App() {
     const id = parseInt(props.match.params.id);
     const characterFound = posts.find((post) => post.id === id);
 
-    return <UserDetail post={characterFound} />;
+    if (characterFound) {
+      return <UserDetail post={characterFound} />;
+    } else {
+      return <UserNotFound />;
+    }
   };
 
   return (
@@ -42,6 +48,10 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Login />
+        </Route>
+
+        <Route exact path="/home">
+          <Home />
         </Route>
 
         <Route path="/logout">
