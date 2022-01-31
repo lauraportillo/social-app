@@ -1,5 +1,5 @@
 // Components
-import HeaderPost from './HeaderPost';
+import Header from './Header';
 import Post from './Post';
 import FilterByName from './FilterByName';
 import Footer from './Footer';
@@ -21,7 +21,7 @@ const PostList = (props) => {
   return (
     <div className="containerPostList">
       <header>
-        <HeaderPost />
+        <Header />
         <form onSubmit={handleForm} className="containerPostListHeader__form">
           <FilterByName handleFilter={props.handleFilter} name={props.name} />
         </form>
