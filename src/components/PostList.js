@@ -22,7 +22,7 @@ const PostList = (props) => {
     <div className="containerPostList">
       <header>
         <HeaderPost />
-        <form onSubmit={handleForm} className="containerPostListMain__form">
+        <form onSubmit={handleForm} className="containerPostListHeader__form">
           <FilterByName handleFilter={props.handleFilter} name={props.name} />
         </form>
       </header>
