@@ -1,7 +1,7 @@
 // Styles
 import '../stylesheets/Footer.scss';
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <footer>
       <ul className="footer">

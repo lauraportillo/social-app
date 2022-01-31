@@ -4,7 +4,6 @@ import { Route, Switch } from 'react-router-dom';
 // Components
 import Login from './Login';
 import Logout from './Logout';
-import Home from './Home';
 import PostList from './PostList';
 import UserDetail from './UserDetail';
 import UserNotFound from './UserNotFound';
@@ -34,7 +33,10 @@ function App() {
   // Each user has their link
   const renderUserDetail = (props) => {
     const id = parseInt(props.match.params.id);
-    const characterFound = posts.find((post) => post.id === id);
+
+    const characterFound = posts.find((post) => {
+      return post.id === id;
+    });
 
     if (characterFound) {
       return <UserDetail post={characterFound} />;
@@ -48,10 +50,6 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Login />
-        </Route>
-
-        <Route exact path="/home">
-          <Home />
         </Route>
 
         <Route path="/logout">
