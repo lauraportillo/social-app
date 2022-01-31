@@ -1,5 +1,6 @@
 // Components
 import Header from './Header';
+import UserNotFound from './UserNotFound';
 import Post from './Post';
 import FilterByName from './FilterByName';
 import Footer from './Footer';
@@ -10,13 +11,20 @@ const PostList = (props) => {
   const handleForm = (ev) => {
     ev.preventDefault();
   };
-  const renderPost = props.posts.map((post) => {
-    return (
-      <li key={post.id.toString()}>
-        <Post post={post} />
-      </li>
-    );
-  });
+
+  const renderPost = () => {
+    if (props.characters.length === 0) {
+      return <UserNotFound />;
+    } else {
+      return props.posts.map((post) => {
+        return (
+          <li key={post.id.toString()}>
+            <Post post={post} />
+          </li>
+        );
+      });
+    }
+  };
 
   return (
     <div className="containerPostList">
