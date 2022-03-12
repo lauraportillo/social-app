@@ -1,0 +1,18 @@
+@import 'Variables';
+@import 'Mixins';
+
+  .containerUserNotFound {
+    @include flexColumn();
+  }
+  .containerUserNotFound__photo {
+    width: 200px;
+    height: 200px;
+    background: url('../images/notFound-320.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .containerUserNotFound__title {
+    font-size: 14px;
+    color: $color3;
+    margin-top: 20px;
+  }

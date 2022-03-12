@@ -26,17 +26,18 @@ function App() {
   };
 
   // Filter
-  const filterPosts = posts.filter((post) => {
+  const filterPosts = posts
+    .filter((post) => {
     return post.name.toLowerCase().includes(name.toLowerCase());
   });
 
   // Each user has their link
   const renderUserDetail = (props) => {
     const id = parseInt(props.match.params.id);
-    const characterFound = posts.find((post) => post.id === id);
+    const postFound = posts.find((post) => post.id === id);
 
-    if (characterFound) {
-      return <UserDetail post={characterFound} />;
+    if (postFound) {
+      return <UserDetail post={postFound} />;
     } else {
       return <UserNotFound />;
     }

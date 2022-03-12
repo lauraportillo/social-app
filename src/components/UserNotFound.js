@@ -2,10 +2,12 @@
 import '../stylesheets/UserNotFound.scss';
 
 const UserNotFound = (props) => {
+
   return (
-    <>
-      <div>NOT FOUND</div>
-    </>
+    <article className="containerUserNotFound">
+      <div className="containerUserNotFound__photo"></div>
+      <h2 className="containerUserNotFound__title">Sorry, friend not found</h2>
+    </article>
   );
 };
 
