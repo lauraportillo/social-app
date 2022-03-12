@@ -11,17 +11,20 @@ const PostList = (props) => {
   const handleForm = (ev) => {
     ev.preventDefault();
   };
-  const renderPost = props.posts.map((post) => {
-    return (
-      <li key={post.id.toString()}>
-        <Post post={post} />
-      </li>
-    );
-  });
 
-  // if (renderPost.length === 0) {
-  //   return <UserNotFound />;
-  // }
+  const renderPosts = () => {
+    if (props.posts.length === 0) {
+      return <UserNotFound />;
+    } else {
+      return props.posts.map((post) => {
+        return (
+          <li key={post.id.toString()}>
+            <Post post={post} />
+          </li>
+        );
+      });
+    }
+  };
 
   return (
     <div className="containerPostList">
@@ -32,7 +35,7 @@ const PostList = (props) => {
         </form>
       </header>
       <main className="containerPostListMain">
-        <ul className="containerPostListMain__list">{renderPost}</ul>
+        <ul className="containerPostListMain__list">{renderPosts()}</ul>
       </main>
       <Footer />
     </div>
