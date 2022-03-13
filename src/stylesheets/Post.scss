@@ -11,22 +11,22 @@
   width: 280px;
 }
 
-.containerPost__section1{
+.containerPost__section{
   width: 280px;
   @include flexBetween();
 }
 
-.containerPost__section1--title {
+.containerPost__section--title {
   font-size: 14px;
   color: $color3;
   margin-top: 10px;
 }
-.containerPost__section1--title:hover {
+.containerPost__section--title:hover {
   color: $color5;
   transition: all 0.1s ease-in-out;
 }
 
-.containerPost__section1--btn{
+.containerPost__section--btn{
   margin-right: 15px;
   margin-top: 10px;
   font-size: 20px;

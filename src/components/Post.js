@@ -1,19 +1,31 @@
 // React
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // Styles
 import '../stylesheets/Post.scss';
 
 const Post = (props) => {
+
+  const [counter, setCounter] = useState(0);
+
+  const handleAdd = () => {
+    setCounter(counter + 1)
+  };
+
   return (
     <article className="containerPost">
       <img className="containerPost__img" src={props.post.post.photo} alt="post" />
-      <div className="containerPost__section1">
+      <div className="containerPost__section">
         <Link to={`./post/${props.post.id}`}>
-          <h2 className="containerPost__section1--title">@{props.post.name}</h2>
+          <h2 className="containerPost__section--title">@{props.post.name}</h2>
         </Link>
-        <button className="containerPost__section1--btn">❤</button>
+        <div>
+          <button className="containerPost__section--btn" onClick={handleAdd}>
+            ❤
+          </button>
+          <p className="containerPost__section--text">{counter}</p>
+        </div>
       </div>
-
       <p className="containerPost__text">{props.post.post.description}</p>
     </article>
   );
