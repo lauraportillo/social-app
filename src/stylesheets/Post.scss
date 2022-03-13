@@ -11,14 +11,29 @@
   width: 280px;
 }
 
-.containerPost__title {
+.containerPost__section1{
+  width: 280px;
+  @include flexBetween();
+}
+
+.containerPost__section1--title {
   font-size: 14px;
   color: $color3;
   margin-top: 10px;
 }
-.containerPost__title:hover {
+.containerPost__section1--title:hover {
   color: $color5;
   transition: all 0.1s ease-in-out;
+}
+
+.containerPost__section1--btn{
+  margin-right: 15px;
+  margin-top: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: inherit;
+  color: $color3;
+  cursor: pointer;
 }
 
 .containerPost__text {
