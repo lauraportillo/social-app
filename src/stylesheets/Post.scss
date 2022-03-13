@@ -6,39 +6,42 @@
   width: 280px;
   margin-top: 10px;
 }
-
 .containerPost__img {
   width: 280px;
 }
+.containerPost__text {
+  font-size: 14px;
+  color: $color5;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
-.containerPost__section{
+.containerPostSection{
   width: 280px;
   @include flexBetween();
 }
-
-.containerPost__section--title {
+.containerPostSection__title {
   font-size: 14px;
   color: $color3;
   margin-top: 10px;
 }
-.containerPost__section--title:hover {
+.containerPostSection--title:hover {
   color: $color5;
   transition: all 0.1s ease-in-out;
 }
-
-.containerPost__section--btn{
+.containerPostSection__likes{
+  @include flex();
   margin-right: 15px;
   margin-top: 10px;
+}
+.containerPostSection__likes--btn{
   font-size: 20px;
   border: none;
   background-color: inherit;
   color: $color3;
   cursor: pointer;
 }
-
-.containerPost__text {
-  font-size: 14px;
-  color: $color5;
-  margin-top: 10px;
-  margin-bottom: 30px;
+.containerPostSection__likes--text{
+  color: $color3;
+  margin-left: 5px;
 }

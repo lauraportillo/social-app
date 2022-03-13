@@ -15,15 +15,15 @@ const Post = (props) => {
   return (
     <article className="containerPost">
       <img className="containerPost__img" src={props.post.post.photo} alt="post" />
-      <div className="containerPost__section">
+      <div className="containerPostSection">
         <Link to={`./post/${props.post.id}`}>
-          <h2 className="containerPost__section--title">@{props.post.name}</h2>
+          <h2 className="containerPostSection__title">@{props.post.name}</h2>
         </Link>
-        <div>
-          <button className="containerPost__section--btn" onClick={handleAdd}>
+        <div className="containerPostSection__likes">
+          <button className="containerPostSection__likes--btn" onClick={handleAdd}>
             ❤
           </button>
-          <p className="containerPost__section--text">{counter}</p>
+          <p className="containerPostSection__likes--text">{counter}</p>
         </div>
       </div>
       <p className="containerPost__text">{props.post.post.description}</p>
